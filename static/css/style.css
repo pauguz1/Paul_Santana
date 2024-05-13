@@ -1,0 +1,189 @@
+
+
+/* css para el portafolio  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* variables globales */
+:root{
+    --color-gradient: #ccd0d5;
+    --box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
+    --box-shadow1: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    --box-shadow2:0 0px 0px 0 var(--color-gradient), 0 0px 10px 0 var(--color-gradient);
+    --box-shadow3: 0 0px 0px 0 var(--color-gradient), 0 0px 10px 0 #2f3238;
+
+    --fondo1: white;
+    --fondo2: black;
+
+    --text-color: black;
+    --text-color2: white;
+
+
+    --relleno: 15px;
+    --relleno1: 10px;
+    --relleno2: 7px;
+    --relleno3: 5px;
+
+    --redondo1: 50px;
+    --redondo2: 20px;
+    --redondo3: 10px;
+
+    --text-color1: black;
+    --text-color2: white;
+
+    --animacion-burbuja: modal-burbuja 150ms alternate linear;
+
+    
+    --color-gray: #cfd0d1;
+    --color-green: #008A4C;
+    --color-alert: #e90c0c;
+
+    --color-grey-normal: rgba(0, 0, 0, 0.50);
+    --color-transparente: transparent;
+    --color-parpadeo: #f3f3f3;
+    --color-parpadeo1: #ecffda;
+    --color-fondo-parpadeo: #ffffff;
+
+    --animacion: modal-pop 110ms alternate linear;
+
+
+    --font-size-titulo: 30px;
+    --font-size-titulo1: 35px;
+    --font-size-titulo2: 40px;
+
+    --font-size1: 25px;
+    --font-size2: 20px;
+    --font-size3: 17px;
+    --font-size4: 15px;
+    --font-size5: 12px;
+    --font-size6: 10px;
+
+    --fuente-strong: "Staatliches", sans-serif;
+    --fuente: "Roboto", sans-serif;
+
+    --duracion-modal-pop: 190ms;
+}
+
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 61px;
+    overflow: hidden;
+}
+
+
+
+/* Para la animacion de salir del interior hasta el exterior */
+@keyframes modal-burbuja {
+    from { transform: scale(-0.2); }
+    to { transform: scale(1); }
+}
+
+/* Para la animacion de salir del interior hasta el exterior */
+@keyframes modal-pop {
+    from { transform: scaleX(-0.2); }
+    to { transform: scaleX(1); }
+}
+.navigation-bar{
+    width: 100%;
+    background: var(--fondo2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    border-radius: var(--redondo3) var(--redondo3) 0px 0px;
+    padding: var(--relleno);
+    box-sizing: border-box;
+}
+.navigation-bar span{
+    font-family: var(--fuente-strong);
+    font-weight: bold;
+    font-size: var(--font-size-titulo);
+    color: var(--text-color2);
+}
+.state-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.state-container span{
+    font-size: var(--font-size4);
+}
+.state-container img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.navigation-bar-bottom{
+    display: flex;
+    width: 100%;
+    padding: var(--relleno1);
+    border-radius: 0px 0px var(--redondo3) var(--redondo3);
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    background: var(--fondo2);
+    justify-content: space-around;
+}
+
+.navigation-bar-bottom > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+.navigation-bar-bottom > div:active{
+    transform: scale(0.96);
+    transition-duration: 150ms;
+}
+
+.navigation-bar-bottom > div img{
+    height: 30px;
+    width: 30px;
+}
+.navigation-bar-bottom > div span{
+    color: var(--text-color2);
+    font-family: var(--fuente);
+    font-size: var(--font-size3);
+}
+
+main{
+    width: 100%;
+    height: calc(100% - 147px);
+}
+main > section{
+    width: 100%;
+    height: 100%;
+}
+
+.principal-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/imagenPrincipal.png');
+    /* background-repeat: no-repeat;  No repetir la imagen */
+    justify-content: space-between;
+}
+.principal-section span:first-child{
+    margin-top: 50px;
+    font-size: var(--font-size-titulo1);
+    font-family: var(--fuente-strong);
+    color: var(--text-color2);
+    text-align: center;
+}
+
+.principal-section span:last-child{
+    font-size: var(--font-size2);
+    font-family: var(--fuente-strong);
+    color: var(--text-color2);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
