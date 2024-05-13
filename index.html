@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Santana</title>
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="shortcut icon" href="static/icons/iconMe.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -22,33 +23,165 @@
             <span>Quien soy?</span>
             <span>La vida es muy corta para hacer una sola cosa</span>
         </section>
+       
+        <section id="seccion-dev"  class="display-none">
+
+            <h1 class="title">Tecnologias que conozco</h1>
+
+            <div class="skill">
+                <div>
+                    <img src="static/icons/iconCamera.svg" alt="icono skill">
+                    <span>Skill</span>
+                </div>
+                <p>
+                    informacion adicional del skill
+                </p>
+            </div>
+
+
+            <h1 class="title">Proyectos de programación</h1>
+
+            <div class="proyect">
+                <div>
+                    <img src="static/icons/iconCamera.svg" alt="icono skill">
+                    <span>PolSerial</span>
+                </div>
+                <p> informacion adicional del skill</p>
+                <img src="static/images/imagenPrincipal.png" alt="">
+                <h2>Tecnologias:</h2>
+                <h3>C#</h3>
+                <h3>C++</h3>
+                <h3>Arduino</h3>
+            </div>
+
+        </section>
+
+
+        <section id="seccion-iot" class="display-none">
+
+        </section>
+
+        <section id="seccion-foto" class="display-none">
+            <h1 class="title">Herramientas</h1>
+            
+            <div class="tools">
+                <div>
+                    <img src="static/images/imagenPrincipal.png" alt="nikon">
+                    <span>Camara Nikon D3200</span>
+                </div>
+                <div>
+                    <img src="static/images/imagenPrincipal.png" alt="nikon">
+                    <span>lightroom</span>
+                </div>
+                <div>
+                    <img src="static/images/imagenPrincipal.png" alt="nikon">
+                    <span>Photoshop</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="seccion-gym" class="display-none">
+
+            <h1 class="title">Entrenamientos</h1>
+
+            <div class="container-gym">
+                <div>
+                    <h2>Ejercicios</h2>
+                    <div>
+                        <img src="static/icons/iconDumbell.svg" alt="">
+                        <span>Pesas</span>
+                    </div>
+                    <div>
+                        <img src="static/icons/iconBody.svg" alt="">
+                        <span>Calistenia</span>
+                    </div>
+                    <div>
+                        <img src="static/icons/iconBox.svg" alt="">
+                        <span>Box</span>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h2>Medidas</h2>
+                    <div>
+                        <img src="static/icons/iconBody.svg" alt="">
+                        <span>1.72cm</span>
+                    </div>
+                    <div>
+                        <img src="static/icons/iconBascula.svg" alt="">
+                        <span>65kg</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
 
 
     </main>
 
 
     <div class="navigation-bar-bottom">
-        <div>
+        <div onclick="mostrarOpcionSeleccionada(this)">
             <img src="static/icons/iconDev.svg" alt="icono dev">
             <span>DEV</span>
         </div>
-        <div>
-            <img src="static/icons/iconRay.svg" alt="icono dev">
+        <div onclick="mostrarOpcionSeleccionada(this)">
+            <img src="static/icons/iconRay.svg" alt="icono iot">
             <span>IOT</span>
         </div>
-        <div>
-            <img src="static/icons/iconMe.svg" alt="icono dev">
-            <span>Me</span>
+        <div class="transform-none">
+            <img onclick="desplegarMe()" src="static/icons/iconMe.svg" alt="icono ME">
+            <span onclick="desplegarMe()" >Me</span>
+            <div class="me display-none">
+                <h2>Hola soy un creador de tecnologia fuera de lo común</h2>
+                <h3>estudie ing en robotica y mecatronica e ing de software</h3>
+                <h3>ademas de multiples  disciplinas más de manera autodidacta</h3>
+                <h3>las cuales me han llevado a La interrogante</h3>
+                <h3>y que mas sigue...</h3>
+                <div class="contact-me">
+                    <h1>Contactame</h1>
+                    <h3>Solo si vamos a hacer algo increible</h3>
+                </div>
+                <div class="contact-social">
+                    <img onclick="window.open('https://www.facebook.com', '_blank');" src="static/icons/iconFacebook.svg" alt="icono facebook">
+                    <img onclick="window.open('https://www.facebook.com', '_blank');" src="static/icons/iconInstagram.svg" alt="icono instagram">
+                    <img onclick="window.open('https://www.facebook.com', '_blank');" src="static/icons/iconTiktok.svg" alt="icono tik tok">
+                    <img onclick="window.open('https://www.facebook.com', '_blank');" src="static/icons/iconX.svg" alt="icon X">
+                    <img onclick="window.open('https://www.facebook.com', '_blank');" src="static/icons/iconLinkeding.svg" alt="icon linkeding">
+                    <img onclick="window.open('https://www.facebook.com', '_blank');" src="static/icons/iconGithub.svg" alt="icon github">
+                </div>
+
+            </div>
         </div>
-        <div>
-            <img src="static/icons/iconCamera.svg" alt="icono dev">
+        <div onclick="mostrarOpcionSeleccionada(this)">
+            <img src="static/icons/iconCamera.svg" alt="icono Foto">
             <span>Foto</span>
         </div>
-        <div>
-            <img src="static/icons/iconGym.svg" alt="icono dev">
+        <div onclick="mostrarOpcionSeleccionada(this)">
+            <img src="static/icons/iconGym.svg" alt="icono GYM">
             <span>GYM</span>
         </div>
     </div>
     
 </body>
+
+<script>
+    if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                .then(function(registration) {
+                    console.log('Service Worker registrado con éxito:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Fallo al registrar el Service Worker:', error);
+                });
+            });
+        }
+</script>
+<script src="static/js/tools.js"></script>
+<script src="static/js/me.js"></script>
+<script src="static/js/dev.js"></script>
 </html>
