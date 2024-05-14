@@ -247,7 +247,7 @@ main > section::-webkit-scrollbar-track{
     color: var(--text-color2);
     font-family: var(--fuente);
     box-sizing: border-box;
-    padding: var(--relleno);
+    padding: var(--relleno1);
     background: var(--fondo2);
     border-radius: var(--redondo1);
 }
@@ -256,12 +256,12 @@ main > section::-webkit-scrollbar-track{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: var(--relleno3)
     box-sizing: border-box;
 }
 .skill > div img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .skill > div span{
     font-family: var(--fuente);
@@ -295,8 +295,8 @@ main > section::-webkit-scrollbar-track{
     align-items: center;
 }
 .proyect > div img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: var(--relleno);
 }
 .proyect > div span{
@@ -454,4 +454,15 @@ main > section::-webkit-scrollbar-track{
 .contact-social img{
     padding: var(--relleno2);
     user-select: none;
+}
+
+
+.container-images{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container-images img{
+    width: 100%;
+    height: auto;
 }

@@ -13,7 +13,7 @@
         <span>Paul Santana</span>
         <div class="state-container">
             <img src="static/icons/iconReloj.svg" alt="icono reloj">
-            <span>Entrenando</span>
+            <span></span>
         </div>
     </nav>
 
@@ -24,111 +24,25 @@
             <span>La vida es muy corta para hacer una sola cosa</span>
         </section>
        
-        <section id="seccion-dev"  class="display-none">
-
-            <h1 class="title">Tecnologias que conozco</h1>
-
-            <div class="skill">
-                <div>
-                    <img src="static/icons/iconCamera.svg" alt="icono skill">
-                    <span>Skill</span>
-                </div>
-                <p>
-                    informacion adicional del skill
-                </p>
-            </div>
+        <section id="seccion-dev"  class="display-none"></section>
 
 
-            <h1 class="title">Proyectos de programación</h1>
+        <section id="seccion-iot" class="display-none"></section>
 
-            <div class="proyect">
-                <div>
-                    <img src="static/icons/iconCamera.svg" alt="icono skill">
-                    <span>PolSerial</span>
-                </div>
-                <p> informacion adicional del skill</p>
-                <img src="static/images/imagenPrincipal.png" alt="">
-                <h2>Tecnologias:</h2>
-                <h3>C#</h3>
-                <h3>C++</h3>
-                <h3>Arduino</h3>
-            </div>
+        <section id="seccion-foto" class="display-none"></section>
 
-        </section>
-
-
-        <section id="seccion-iot" class="display-none">
-
-        </section>
-
-        <section id="seccion-foto" class="display-none">
-            <h1 class="title">Herramientas</h1>
-            
-            <div class="tools">
-                <div>
-                    <img src="static/images/imagenPrincipal.png" alt="nikon">
-                    <span>Camara Nikon D3200</span>
-                </div>
-                <div>
-                    <img src="static/images/imagenPrincipal.png" alt="nikon">
-                    <span>lightroom</span>
-                </div>
-                <div>
-                    <img src="static/images/imagenPrincipal.png" alt="nikon">
-                    <span>Photoshop</span>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="seccion-gym" class="display-none">
-
-            <h1 class="title">Entrenamientos</h1>
-
-            <div class="container-gym">
-                <div>
-                    <h2>Ejercicios</h2>
-                    <div>
-                        <img src="static/icons/iconDumbell.svg" alt="">
-                        <span>Pesas</span>
-                    </div>
-                    <div>
-                        <img src="static/icons/iconBody.svg" alt="">
-                        <span>Calistenia</span>
-                    </div>
-                    <div>
-                        <img src="static/icons/iconBox.svg" alt="">
-                        <span>Box</span>
-                    </div>
-
-                </div>
-
-                <div>
-                    <h2>Medidas</h2>
-                    <div>
-                        <img src="static/icons/iconBody.svg" alt="">
-                        <span>1.72cm</span>
-                    </div>
-                    <div>
-                        <img src="static/icons/iconBascula.svg" alt="">
-                        <span>65kg</span>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
+        <section id="seccion-gym" class="display-none"></section>
 
 
     </main>
 
 
     <div class="navigation-bar-bottom">
-        <div onclick="mostrarOpcionSeleccionada(this)">
+        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionDev();">
             <img src="static/icons/iconDev.svg" alt="icono dev">
             <span>DEV</span>
         </div>
-        <div onclick="mostrarOpcionSeleccionada(this)">
+        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionIot();">
             <img src="static/icons/iconRay.svg" alt="icono iot">
             <span>IOT</span>
         </div>
@@ -156,17 +70,18 @@
 
             </div>
         </div>
-        <div onclick="mostrarOpcionSeleccionada(this)">
+        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionFoto();">
             <img src="static/icons/iconCamera.svg" alt="icono Foto">
             <span>Foto</span>
         </div>
-        <div onclick="mostrarOpcionSeleccionada(this)">
+        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionGym();">
             <img src="static/icons/iconGym.svg" alt="icono GYM">
             <span>GYM</span>
         </div>
     </div>
     
 </body>
+
 
 <script>
     if ('serviceWorker' in navigator) {
@@ -182,6 +97,10 @@
         }
 </script>
 <script src="static/js/tools.js"></script>
+<script src="static/js/status.js"></script>
 <script src="static/js/me.js"></script>
 <script src="static/js/dev.js"></script>
+<script src="static/js/iot.js"></script>
+<script src="static/js/foto.js"></script>
+<script src="static/js/gym.js"></script>
 </html>

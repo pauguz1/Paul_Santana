@@ -23,3 +23,25 @@ function mostrarOpcionSeleccionada(seleccionado){
         }
     });
 }
+
+
+/**
+ * Este metodo recorre la lista de secciones
+ * y pone a todas las secciones la clase display-none
+ * menos a la que le pasemos como parametro
+ * @param {elemento que se va mostrar} seleccionado 
+ */
+function mostrarSeccionSeleccionada(seleccionado){
+    let listaElmenetos = document.querySelectorAll('main section');
+
+    listaElmenetos.forEach(elemento=>{
+        //si el elemento es el seleccionado entonces agregamos la clase seleccionado
+        //para que este se seleccione
+        if(elemento == seleccionado){
+            elemento.classList.remove('display-none');
+            
+        }else{// si no es entonces la quitamos la clase de seleccionado
+            elemento.classList.add('display-none');
+        }
+    });
+}

@@ -1,6 +1,6 @@
 
 /**
- * Este codigo es para la seccion del desarollo de software
+ * Este codigo es para la seccion del desarollo de sistemas iot
  */
 
 
@@ -8,8 +8,8 @@
 /**
  * Este metodo muestra la opcion de desarollo en la pantalla
  */
-function mostrarOpcionDev(){
-    let contenedor = document.querySelector('#seccion-dev');
+function mostrarOpcionIot(){
+    let contenedor = document.querySelector('#seccion-iot');
 
     if(contenedor.innerHTML == ''){
         contenedor.innerHTML =  `
@@ -17,8 +17,8 @@ function mostrarOpcionDev(){
 
             <div class="skill">
                 <div>
-                    <img src="static/icons/iconJs.svg" alt="icono skill">
-                    <span>JS</span>
+                    <img src="static/icons/iconCamera.svg" alt="icono skill">
+                    <span>Skill</span>
                 </div>
                 <p>
                     informacion adicional del skill
@@ -30,7 +30,7 @@ function mostrarOpcionDev(){
 
             <div class="proyect">
                 <div>
-                    <img src="static/icons/iconCSharp.svg" alt="icono skill">
+                    <img src="static/icons/iconCamera.svg" alt="icono skill">
                     <span>PolSerial</span>
                 </div>
                 <p> informacion adicional del skill</p>
