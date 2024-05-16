@@ -229,6 +229,20 @@ main > section::-webkit-scrollbar-track{
 }
 
 /* para los skills */
+#contenedor-skills, #contenedor-skills-iot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contenedor-proyects, #contenedor-proyects-iot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .skill{
     margin: auto;
     width: 85%;
@@ -242,18 +256,21 @@ main > section::-webkit-scrollbar-track{
     padding: var(--relleno1);
     background: var(--fondo2);
     border-radius: var(--redondo1);
+    margin: 5px;
+    max-width: 380px;
 }
 .skill > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--relleno3)
+    padding: var(--relleno3);
     box-sizing: border-box;
 }
 .skill > div img{
     width: 50px;
     height: 50px;
+    padding: var(--relleno3);
 }
 .skill > div span{
     font-family: var(--fuente);
@@ -263,6 +280,7 @@ main > section::-webkit-scrollbar-track{
 .skill p{
     font-family: var(--fuente);
     font-size: var(--font-size3);
+    padding: var(--relleno1);
     margin: 0px;
 }
 
@@ -279,6 +297,8 @@ main > section::-webkit-scrollbar-track{
     border-radius: var(--redondo1);
     color: var(--text-color2);
     font-family: var(--fuente);
+    margin: 5px;
+    max-width: 380px;
 }
 .proyect > div{
     width: 100%;
@@ -302,11 +322,14 @@ main > section::-webkit-scrollbar-track{
 }
 .proyect > img{
     width: 100%;
+    border-radius: var(--redondo3);
 }
 .proyect h2{
     width: 100%;
     font-size: var(--font-size2);
     margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .proyect h3{
     width: 100%;
@@ -452,9 +475,11 @@ main > section::-webkit-scrollbar-track{
 
 
 .container-images{
+    margin: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .container-images img{
     width: 100%;
