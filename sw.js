@@ -1,7 +1,7 @@
 
 
 
-const CACHE_STATIC_PAGE = 'static-pages-v1.018';
+const CACHE_STATIC_PAGE = 'static-pages-v1.019';
 
 
 
@@ -25,8 +25,7 @@ self.addEventListener('install', e => {
 
     const lecturaCache = caches.open(CACHE_STATIC_PAGE).then(cache=>{
         return  cache.addAll([
-            '',
-            '/',
+            '/'
         ]);//agregamos las paginas estaticas a agregar
     });
     console.log('instalando');
