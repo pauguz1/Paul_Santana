@@ -345,6 +345,7 @@ main > section::-webkit-scrollbar-track{
 
 .tools{
     width: 85%;
+    max-width: 380px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -378,6 +379,7 @@ main > section::-webkit-scrollbar-track{
 
 .container-gym{
     width: 100%;
+    max-width: 380px;
     display: flex;
     justify-content: space-around;
     align-items: center;
