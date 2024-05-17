@@ -32,8 +32,8 @@ function mostrarOpcionFoto(){
     <h1 class="title">PICS</h1>
 
     <div class='container-images'>
-        <img src="static/images/imagenPrincipal.png" alt="nikon" loading="lazy">
-        <img src="static/images/imagenPrincipal.png" alt="nikon" loading="lazy">
+        <img src="static/fotos/2022.png" alt="paul santana" loading="lazy">
+        <img src="static/fotos/2022-1.png" alt="paul santana" loading="lazy">
     </div>
     `;
     }

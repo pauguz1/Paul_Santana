@@ -16,8 +16,6 @@ function mostrasStatusReloj(){
     //restamos 1 hora para que coincida con la actual
     hora.setHours(hora.getHours()-1);
 
-    console.log(hora)
-
     //obtenemos la etiqueta del status
     let status = document.querySelector('.state-container').children[1];
 

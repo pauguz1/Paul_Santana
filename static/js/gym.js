@@ -49,8 +49,8 @@ function mostrarOpcionGym(){
         <h1 class="title">PICS</h1>
 
         <div class='container-images'>
-            <img src="static/images/imagenPrincipal.png" alt="nikon" loading="lazy">
-            <img src="static/images/imagenPrincipal.png" alt="nikon" loading="lazy">
+            <img src="static/fotos-gym/2018.png" alt="nikon" loading="lazy">
+            <img src="static/fotos-gym/2018-1.png" alt="nikon" loading="lazy">
         </div>
     `;
     }
