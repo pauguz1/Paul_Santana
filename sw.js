@@ -1,7 +1,7 @@
 
 
 
-const CACHE_STATIC_PAGE = 'static-pages-v1.017';
+const CACHE_STATIC_PAGE = 'static-pages-v1.018';
 
 
 
@@ -13,7 +13,7 @@ function limpiarCache(){
              * y si contiene el formato de la variable entonces borramos las versiones anteriores
              * ejmplo variableActual= stV1.0  stV0.9 <-- es diferente a la actual y tiene el formato stV
              */
-            if(key !== CACHE_STATIC_PAGE && key.includes('static-pages-v')){
+            if(key != CACHE_STATIC_PAGE && key.includes('static-pages-v')){
                 caches.delete(key);//borramos todas las key que no concuerden con la version actual
             }
         });
