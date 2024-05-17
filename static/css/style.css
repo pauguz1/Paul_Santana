@@ -427,6 +427,7 @@ main > section::-webkit-scrollbar-track{
     padding: var(--relleno);
     bottom: 5rem;
     animation: var(--animacion-burbuja);
+    max-width: 380px;
 }
 .me h2, .me h3{
     font-family: var(--fuente-strong);
