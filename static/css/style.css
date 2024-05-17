@@ -475,6 +475,7 @@ main > section::-webkit-scrollbar-track{
 
 
 .container-images{
+    max-width: 380px;
     margin: auto;
     width: 100%;
     display: flex;
