@@ -489,3 +489,14 @@ main > section::-webkit-scrollbar-track{
     width: 100%;
     height: auto;
 }
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px){
+    .navigation-bar-bottom{
+        justify-content: center;
+    }
+    .navigation-bar-bottom div{
+        padding-left: var(--relleno);
+        padding-right: var(--relleno);
+    }
+}
