@@ -45,3 +45,30 @@ function mostrarSeccionSeleccionada(seleccionado){
         }
     });
 }
+
+
+/**
+ * Este metodo muestra en pantalla el mensaje para la instalacion de la PWA
+ */
+function instalarPWA(){
+    // Consulta si ya se puede instalar la PWA
+  if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+    console.log('La PWA ya está instalada.');
+  } else {
+    // Verifica si el evento beforeinstallprompt está disponible
+    if (window.deferredPrompt) {
+      // Muestra el mensaje de instalación
+      window.deferredPrompt.prompt();
+      window.deferredPrompt.userChoice.then(choiceResult => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('El usuario aceptó la instalación de la PWA');
+        } else {
+          console.log('El usuario canceló la instalación de la PWA');
+        }
+        window.deferredPrompt = null;
+      });
+    } else {
+      console.error('El evento beforeinstallprompt no está disponible.');
+    }
+  }
+}
