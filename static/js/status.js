@@ -13,8 +13,6 @@
  */
 function mostrasStatusReloj(){
     let hora = new Date();
-    //restamos 1 hora para que coincida con la actual
-    hora.setHours(hora.getHours()-1);
 
     //obtenemos la etiqueta del status
     let status = document.querySelector('.state-container').children[1];
@@ -72,6 +70,6 @@ setInterval(mostrasStatusReloj,60000);
 function horario(hora,minutos){
     let tiempo  = new Date();
     tiempo.setHours(hora);
-    tiempo.setMinutes(minutos)
+    tiempo.setMinutes(minutos);
     return tiempo;
 }
