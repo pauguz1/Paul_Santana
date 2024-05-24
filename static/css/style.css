@@ -186,6 +186,7 @@ main > section{
     box-sizing: border-box;
     animation: var(--animacion-burbuja);
 }
+
 /*-------------- Scroll ----------*/
 /* para el grosor del scrollbar */
 main > section::-webkit-scrollbar{
@@ -276,12 +277,14 @@ main > section::-webkit-scrollbar-track{
     font-family: var(--fuente);
     font-size: var(--font-size2);
     font-weight: bold;
+    color: var(--text-color2);
 }
 .skill p{
     font-family: var(--fuente);
     font-size: var(--font-size3);
     padding: var(--relleno1);
     margin: 0px;
+    color: var(--text-color2);
 }
 
 /* para los proyectos */
