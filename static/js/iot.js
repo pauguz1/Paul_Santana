@@ -153,21 +153,21 @@ function mostrarOpcionIot(){
             'icon':'InvernaderoPro.ico',
             'imagen':'InvernaderoPro.png',
             'info':'2021 Sistema para el control de los horarios de riego de invernaderos en tiempo real.',
-            'tecnologia':['C#','Firebase','ESP-8266']
+            'tecnologia':['C#','Figma UX UI','Firebase','ESP-8266']
         },
         {
             'titulo':'Control Lámpara',
             'icon':'lampara.png',
             'imagen':'sistemaControlLampara.png',
             'info':'2023 Sistema de control en tiempo real de una lámpara utilizando microservicios y mi propia metodología de diseño e implementación de arquitectura de microservicios en sistemas IOT.',
-            'tecnologia':['Nodejs','NGINX','Docker','HTML','CSS','JS','ESP-8266']
+            'tecnologia':['Nodejs','Figma UX UI','NGINX','Docker','HTML','CSS','JS','ESP-8266']
         },
         {
             'titulo':'Estación Meteorológica',
             'icon':'estacion.png',
             'imagen':'sistemaMonitoreo.png',
             'info':'2023 Sistema de monitoreo en tiempo real, monitoreo histórico y predicción de la temperatura y humedad del ambiente utilizando microservicios y mi propia metodología de diseño e implementación de arquitectura de microservicios en sistemas IOT.',
-            'tecnologia':['Nodejs','Django','TensorFlow','API','NGINX','Docker','HTML','CSS','JS','ESP-8266']
+            'tecnologia':['Nodejs','Figma UX UI','Django','TensorFlow','API','NGINX','Docker','HTML','CSS','JS','ESP-8266']
         }
     ]
 

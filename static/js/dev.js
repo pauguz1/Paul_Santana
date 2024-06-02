@@ -80,7 +80,7 @@ function mostrarOpcionDev(){
             'icon':'MotApp.svg',
             'imagen':'MotApp.jpg',
             'info':'2018 aplicación móvil android para el control y monitoreo de motocicletas.',
-            'tecnologia':['Java','Dialowflow']
+            'tecnologia':['Java','UX UI','Dialowflow']
         },
         {
             'titulo':'PSG',
@@ -115,7 +115,7 @@ function mostrarOpcionDev(){
             'icon':'finanzasX.png',
             'imagen':'finanzasX1.png',
             'info':'2021 Sistema para la gestión de las finanzas de startups para el laboratorio de software libre labsol en el cual se puede realizar el balance de un proyecto así como el gestionar el gasto por los recursos de capital humano.',
-            'tecnologia':['Django','Figma','HTML','CSS','JS','GIT']
+            'tecnologia':['Django','Figma UX UI','HTML','CSS','JS','GIT']
         },
         {
             'titulo':'Iplant',
@@ -129,35 +129,35 @@ function mostrarOpcionDev(){
             'icon':'czPRO.svg',
             'imagen':'czPRO.png',
             'info':'2022 Sistema de monitoreo y control de invernaderos ',
-            'tecnologia':['Django','Figma','PWA','API','HTML','CSS','JS','GIT']
+            'tecnologia':['Django','Figma UX UI','PWA','API','HTML','CSS','JS','GIT']
         },
         {
             'titulo':'Planeación Docente',
             'icon':'planeacionDocente.svg',
             'imagen':'planeacionDocente.png',
             'info':'2022 Sistema para la gestión y colaboración de las planeaciones de los docentes.',
-            'tecnologia':['Django','Figma','API','HTML','CSS','JS','GIT']
+            'tecnologia':['Django','Figma UX UI','API','HTML','CSS','JS','GIT']
         },
         {
             'titulo':'FishGroup',
             'icon':'fishGroup.png',
             'imagen':'fishGroup1.png',
             'info':'2023 Sistema para la gestión de pruebas y control de invernaderos de pescados.',
-            'tecnologia':['Django','Figma','PWA','SPA','API','HTML','CSS','JS','GIT']
+            'tecnologia':['Django','Figma UX UI','PWA','SPA','API','HTML','CSS','JS','GIT']
         },
         {
             'titulo':'Inifap',
             'icon':'inifap.svg',
             'imagen':'inifap.png',
             'info':'2023 Sistema para la gestión de los gastos de proyectos del inifap.',
-            'tecnologia':['Django','TDD','Figma','PWA','SPA','NGINX','API','HTML','CSS','JS','Docker','PostgreSQL','GIT']
+            'tecnologia':['Django','TDD','Figma UX UI','PWA','SPA','NGINX','API','HTML','CSS','JS','Docker','PostgreSQL','GIT']
         },
         {
             'titulo':'Lecheria Cienega Jerez',
             'icon':'lecheriaCienegaJerez.svg',
             'imagen':'lecheriaCienegaJerez.png',
             'info':'2024 Sistema para la gestión de compras y ventas de productos, análisis del comportamiento de compras y ventas de los usuarios y predicción de las mismas.',
-            'tecnologia':['Django','TDD','Figma','PWA','SPA','NGINX','API','HTML','CSS','JS','Docker','PostgreSQL','GIT']
+            'tecnologia':['Django','TDD','Figma UX UI','PWA','SPA','NGINX','API','HTML','CSS','JS','Docker','PostgreSQL','GIT']
         }
     ]
 
