@@ -11,6 +11,17 @@
 function mostrarOpcionGym(){
     let contenedor = document.querySelector('#seccion-gym');
 
+    let fotos = [
+    		'1.jpg',
+    		'2.png',
+    		'3.png',
+    	];
+    	
+    let fotosHtml = '';
+    for(a in fotos){
+    	fotosHtml +=`<img src="static/fotos-gym/${fotos[a]}" alt="paul santana" loading="lazy">`;
+    }
+
     if(contenedor.innerHTML ==''){
         contenedor.innerHTML =  `
         <h1 class="title">Entrenamientos</h1>
@@ -49,8 +60,7 @@ function mostrarOpcionGym(){
         <h1 class="title">PICS</h1>
 
         <div class='container-images'>
-            <img src="static/fotos-gym/2018.png" alt="nikon" loading="lazy">
-            <img src="static/fotos-gym/2018-1.png" alt="nikon" loading="lazy">
+            ${fotosHtml}
         </div>
     `;
     }
