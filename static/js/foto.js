@@ -10,6 +10,24 @@
  */
 function mostrarOpcionFoto(){
     let contenedor = document.querySelector('#seccion-foto');
+    
+    let fotos = [
+    		'1.jpg',
+    		'2.jpg',
+    		'3.jpg',
+    		'4.jpg',
+    		'5.jpg',
+    		'6.jpg',
+    		'7.jpg',
+    		'8.jpg',
+    		'9.jpg',
+            '10.jpg'
+    	];
+    	
+    let fotosHtml = '';
+    for(a in fotos){
+    	fotosHtml +=`<img src="static/fotos/${fotos[a]}" alt="paul santana" loading="lazy">`;
+    }
 
     if(contenedor.innerHTML ==''){
         contenedor.innerHTML =  `
@@ -32,8 +50,7 @@ function mostrarOpcionFoto(){
     <h1 class="title">PICS</h1>
 
     <div class='container-images'>
-        <img src="static/fotos/2022.png" alt="paul santana" loading="lazy">
-        <img src="static/fotos/2022-1.png" alt="paul santana" loading="lazy">
+        ${fotosHtml}
     </div>
     `;
     }
