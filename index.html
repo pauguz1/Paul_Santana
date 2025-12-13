@@ -1,110 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Santana</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="static/css/fuentesStaatlices.css">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="shortcut icon" href="static/icons/iconMe.svg" type="image/x-icon">
-</head>
-<body>
-
-    <nav class="navigation-bar">
-        <span onclick="window.location='/Paul_Santana/'">Paul Santana</span>
-        <div class="state-container">
-            <img src="static/icons/iconReloj.svg" alt="icono reloj">
-            <span>  </span>
-        </div>
-    </nav>
-
-    <main>
-
-        <section class="principal-section">
-            <span>Quien soy?</span>
-            <span>La vida es muy corta para hacer una sola cosa</span>
-        </section>
-       
-        <section id="seccion-dev"  class="display-none"></section>
-
-
-        <section id="seccion-iot" class="display-none"></section>
-
-        <section id="seccion-foto" class="display-none"></section>
-
-        <section id="seccion-gym" class="display-none"></section>
-
-
-    </main>
-
-
-    <div class="navigation-bar-bottom">
-        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionDev();">
-            <img src="static/icons/iconDev.svg" alt="icono dev">
-            <span>DEV</span>
-        </div>
-        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionIot();">
-            <img src="static/icons/iconRay.svg" alt="icono iot">
-            <span>IOT</span>
-        </div>
-        <div class="transform-none">
-            <img onclick="desplegarMe()" src="static/icons/iconMe.svg" alt="icono ME">
-            <span onclick="desplegarMe()" >Me</span>
-            <div class="me display-none">
-                <h2>Hola soy un creador de tecnologia fuera de lo común</h2>
-                <h3>estudie ing en robotica y mecatronica e ing de software</h3>
-                <h3>ademas de multiples  disciplinas más de manera autodidacta</h3>
-                <h3>las cuales me han llevado a La interrogante</h3>
-                <h3>y que mas sigue...</h3>
-                <div class="contact-me">
-                    <h1>Contactame</h1>
-                    <h3>Solo si vamos a hacer algo increible</h3>
-                </div>
-                <div class="contact-social">
-                    <img onclick="window.open('https://www.facebook.com/share/GjUaHxUJRTySsxhs/?mibextid=qi2Omg', '_blank');" src="static/icons/iconFacebook.svg" alt="icono facebook">
-                    <img onclick="window.open('https://www.instagram.com/paul_s4ntana/?hl=es-la', '_blank');" src="static/icons/iconInstagram.svg" alt="icono instagram">
-                    <img onclick="window.open('https://www.tiktok.com/@paul_santana?_t=8mQxz8bga73&_r=1', '_blank');" src="static/icons/iconTiktok.svg" alt="icono tik tok">
-                    <img onclick="window.open('https://x.com/PaulSan03224341?t=NPx7NWQDuFI4JSKrBNhJRA&s=08', '_blank');" src="static/icons/iconX.svg" alt="icon X">
-                    <img onclick="window.open('https://mx.linkedin.com/in/paul-santana-5678341a6', '_blank');" src="static/icons/iconLinkeding.svg" alt="icon linkeding">
-                    <img onclick="window.open('https://github.com/pauguz1', '_blank');" src="static/icons/iconGithub.svg" alt="icon github">
-                </div>
-
-            </div>
-        </div>
-        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionFoto();">
-            <img src="static/icons/iconCamera.svg" alt="icono Foto">
-            <span>Foto</span>
-        </div>
-        <div onclick="mostrarOpcionSeleccionada(this);mostrarOpcionGym();">
-            <img src="static/icons/iconGym.svg" alt="icono GYM">
-            <span>GYM</span>
-        </div>
-    </div>
-    
-</body>
-
-
-<script>
-    if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js')
-                .then(function(registration) {
-                    console.log('Service Worker registrado con éxito:', registration.scope);
-                })
-                .catch(function(error) {
-                    console.log('Fallo al registrar el Service Worker:', error);
-                });
-            });
-        }
-</script>
-
-<script src="static/js/tools.js"></script>
-<script src="static/js/status.js"></script>
-<script src="static/js/me.js"></script>
-<script src="static/js/dev.js"></script>
-<script src="static/js/iot.js"></script>
-<script src="static/js/foto.js"></script>
-<script src="static/js/gym.js"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paul-santana</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

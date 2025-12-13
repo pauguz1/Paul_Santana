@@ -1,0 +1,179 @@
+/* css Global  */
+
+/* variables globales */
+:root{
+    --color-gradient: #ccd0d5;
+    --box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
+    --box-shadow1: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    --box-shadow2:0 0px 0px 0 var(--color-gradient), 0 0px 10px 0 var(--color-gradient);
+    --box-shadow3: 0 0px 0px 0 var(--color-gradient), 0 0px 10px 0 #2f3238;
+
+
+    --box-shadow-black:0 0 5px rgba(255, 255, 255, 0.2),   /* brillo suave */
+     0 0 10px rgba(255, 255, 255, 0.1);
+
+    --fondo0: #0f1518;
+    --fondo1: white;
+    --fondo2: black;
+    --fondo3: rgb(32, 33, 36);
+    --fondo4: rgb(77, 80, 86);
+
+    --fondo-landing: #20232B;
+
+    --fondo-primario: #20232B;
+
+    --text-color: black;
+    --text-color2: white;
+
+
+    --relleno: 15px;
+    --relleno1: 10px;
+    --relleno2: 7px;
+    --relleno3: 5px;
+
+    --redondo1: 50px;
+    --redondo2: 2rem;
+    --redondo2-5: 20px;
+    --redondo3: 1rem;
+    --redondo4: 15px;
+
+    --text-color1: black;
+    --text-color2: white;
+
+    --animacion-burbuja: modal-burbuja 155ms alternate linear;
+
+    
+    --color-gray: #edf0f1;
+    --color-green: #008A4C;
+    --color-green-ok: #2CDD5B;
+    --color-orange: #D58201;
+    --color-alert: #e90c0c;
+
+    --color-grey-normal: rgba(0, 0, 0, 0.50);
+    --color-transparente: transparent;
+    --color-parpadeo: #f3f3f3;
+    --color-parpadeo1: #ecffda;
+    --color-fondo-parpadeo: #ffffff;
+
+    --animacion: modal-pop 110ms alternate linear;
+
+
+    --font-size-titulo: 30px;
+    --font-size-titulo1: 35px;
+    --font-size-titulo2: 40px;
+
+    --font-size1: 25px;
+    --font-size2: 20px;
+    --font-size3: 17px;
+    --font-size4: 15px;
+    --font-size5: 12px;
+    --font-size6: 10px;
+
+    --fuente-strong: "Staatliches", sans-serif;
+    --fuente: "Roboto", sans-serif;
+
+    --duracion-modal-pop: 190ms;
+}
+
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: var(--fondo1);
+    box-sizing: border-box;
+    background: var(--fondo-primario);
+}
+
+.display-none{
+    display: none !important;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.App{
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+
+/*-------------- Scroll ----------*/
+/* para el grosor del scrollbar */
+.App::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(36, 37, 45);
+}
+/* para el boton que se desliza sobre la barra */
+.App::-webkit-scrollbar-thumb{
+    background: var(--text-color1);
+    border-radius: var(--redondo1);
+    border: 1px solid rgb(106, 108, 112);
+}
+
+/* para el contenedor de la barra que se desliza */
+.App::-webkit-scrollbar-track{
+    border-radius: var(--redondo1);
+}
+
+.title{
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--text-color2);
+    font-family: var(--fuente-strong);
+    text-align: center;
+}
+
+/* Para la animacion de salir del interior hasta el exterior */
+@keyframes modal-burbuja {
+    from { transform: scale(-0.2); }
+    to { transform: scale(1); }
+}
+
+/* Para la animacion de salir del interior hasta el exterior */
+@keyframes modal-pop {
+    from { transform: scaleX(-0.2); }
+    to { transform: scaleX(1); }
+}
+
+
+
+
+
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+
+}
+
+
+
+
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    
+
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    
+    
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+   
+}
