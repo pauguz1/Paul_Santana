@@ -94,7 +94,7 @@ const asesor = `
 
             {/* seccion Developer*/}
             <section ref={devRef}  className='seccion seccion-index'>
-                <h1>ey its me</h1>
+                <h1>Hey, it’s me</h1>
                 <h3>La vida es muy corta para hacer una sola cosa</h3>
             </section>
 
