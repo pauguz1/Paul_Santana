@@ -63,7 +63,7 @@ const asesor = `
             <nav className='navbar-LandingPage'>
                 <a href='/'>Paul Santana</a>
                 <div>
-                    <h4>Entrendo</h4>
+                    <h4>Entrenando</h4>
                 </div>
             </nav>
 
