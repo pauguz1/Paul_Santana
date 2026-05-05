@@ -6,7 +6,6 @@ import './App.css'
 import LandingPageComponent from './pages/LandingPage/LandingPage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

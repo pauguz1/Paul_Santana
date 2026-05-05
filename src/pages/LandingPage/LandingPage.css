@@ -86,6 +86,47 @@
 }
 
 
+/* para el navbar option en donde estan las opciones de seleccion del sistema */
+.navbar-options{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 43px;
+  width: 100%;
+  background: var(--fondo2);
+  padding: var(--relleno3);
+}
+
+/* para el contenedor que contiene la opcion seleccionada del sistema */
+.navbar-options-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--relleno3);
+}
+
+.navbar-options-item:active, .navbar-options-item > img{
+  transform: scale(0.92);
+  transition-duration: 40ms;
+}
+
+.navbar-options-item > span{
+  font-size: var(--font-size4);
+  color: var(--text-color2);
+}
+.navbar-options-item > img{
+  height: 25px;
+  width: 25px;
+  user-select: none;
+}
+
+
 /* para el contenedor de cada seccion */
 .seccion{
   width: 100%;
