@@ -6,6 +6,9 @@
   width: 100%;
   box-sizing: border-box;
   background: var(--fondo-landing);
+  overflow: auto;
+  padding-bottom: 50px;
+
 }
 
 
@@ -136,9 +139,11 @@
   height: 100%;
   background: var(--fondo-landing);
   box-sizing: border-box;
+  padding-top: 50px;
 }
 .seccion-index{
-  height: 100% !important;
+  min-height: 600px;
+  width: 100%;
   background-image: url('/Paul-Dani-Final-2024-17.jpg');
   background-size: cover;
   background-position: center;
@@ -149,14 +154,14 @@
   align-items: flex-start;
 }
 .seccion-index > h1{
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: 10px;
   font-size: var(--font-size-titulo2);
   font-family: 'Staatliches', regular;
 }
 
 .seccion-index > h3{
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   margin-left: 10px;
   font-size: var(--font-size2);
   font-family: 'Staatliches', regular;
@@ -447,9 +452,97 @@
 
 
 
+/* para el titulo de una seccion */
+
+.titulo-interno-seccion-LandingPage{
+  font-size: var(--font-size-titulo);
+  color: var(--text-color2);
+  margin: 10px;
+}
+
+/* para el subtitulo de una seccion */
+.subtitulo-interno-seccion-LandingPage{
+  text-align: left;
+  font-size: var(--font-size2);
+  color: var(--text-color2);
+  margin: 0px;
+  margin: 10px;
+}
+
+/*Para el contenedor de las tecnologias */
+.contenedor-items-tecnologia-LandingPage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: var(--relleno2);
+}
+.contenedor-items-tecnologia-LandingPage > img{
+  width: 40px;
+  height: 40px;
+  user-select: none;
+  margin: 5px;
+}
+.contenedor-items-tecnologia-LandingPage > h3{
+  font-size: var(--font-size3);
+  color: var(--text-color2);
+  margin: 5px;
+}
 
 
+/* Para el contenedor del item proyecto DEV */
+.contenedor-proyecto-dev-LandingPage{
+  display: flex;
+  flex-direction: column;
+  background: var(--fondo2);
+  border-radius: var(--redondo2);
+  padding: var(--relleno2);
+  margin: 10px;
+  box-sizing: border-box;
+}
+.cabecera-proyecto-dev-LandingPage{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cabecera-proyecto-dev-LandingPage > span{
+  color: var(--text-color2);
+  font-size: var(--font-size2);
+}
+.cabecera-proyecto-dev-LandingPage > img{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  user-select: none;
+}
+.contenedor-proyecto-dev-LandingPage > p{
+  font-size: var(--font-size3);
+  color: var(--text-color2);
+  margin: 0;
+  padding: var(--relleno1);
+  text-align: left;
+}
+.contenedor-proyecto-dev-LandingPage > h3{
+  font-size: var(--font-size3);
+  color: var(--text-color2);
+  margin: 0;
+  text-align: left;
+}
+.contenedor-proyecto-dev-LandingPage > img{
+  height: 200px;
+}
 
+.contenedor-tecnologias-proyecto-dev-LandingPage{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contenedor-tecnologias-proyecto-dev-LandingPage > img{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  user-select: none;
+}
 
 /* Efecto de pulso */
 @keyframes pulse-LandingPage {
@@ -503,15 +596,220 @@
 
 
 
+/* Para el contenedor de las galeria de imagenes */
+.contenedor-galeria-imagenes-LandingPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenedor-galeria-imagenes-LandingPage > img{
+  height: 100% !important;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* Para el contenedor de las rutinas del gym */
+.contenedor-rutina-gym-LandingPage{
+  width: 95%;
+  overflow-x: auto;
+  background: var(--fondo2);
+  border-radius: var(--redondo2-5);
+  padding: var(--relleno3);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Para la cabecera */
+.cabecera-rutina-gym-LandingPage{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cabecera-rutina-gym-LandingPage h1{
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  margin: 0;
+  padding: var(--relleno1);
+  font-size: var(--font-size1);
+  color: var(--text-color2);
+  box-sizing: border-box;
+}
+
+
+/* Contenedor semana */
+.contenedor-semana-gym-LandingPage{
+  padding: var(--relleno3);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-semana-gym-LandingPage > h2{
+  margin: 0;
+  padding: var(--relleno1);
+  font-size: var(--font-size2);
+  color: var(--text-color2);
+  box-sizing: border-box;
+}
+.contenedor-semana-gym-LandingPage > h1{
+  margin: 0;
+  padding: var(--relleno1);
+  font-size: var(--font-size1);
+  color: var(--text-color2);
+  box-sizing: border-box;
+}
+.contenedor-semana-gym-LandingPage > div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contenedor-semana-gym-LandingPage > div > h3{
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  margin: 0px;
+  padding: var(--relleno1);
+  font-size: var(--font-size3);
+  color: var(--text-color2);
+  box-sizing: border-box;
+}
 
 
 
+
+/* Para el contenedor de ME */
+.contenedor-me-LandingPage{
+  width: 330px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.604);
+  backdrop-filter: blur(5px);
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  border-radius: var(--redondo2-5);
+  padding: var(--relleno1);
+  margin: auto;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  animation: fadeUp-me-LandingPage 0.25s ease-out;
+}
+/* Animación para el contenedor ME */
+
+@keyframes fadeUp-me-LandingPage {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+.contenedor-me-LandingPage > h1{
+  text-align: start;
+  color: var(--text-color2);
+  font-size: var(--font-size1);
+  margin: 0;
+  margin-bottom: 5px;
+}
+.contenedor-me-LandingPage > h3{
+  text-align: start;
+  color: var(--text-color2);
+  font-size: var(--font-size4);
+  margin: 0;
+}
+
+
+
+/* Para el contenedor del mensaje call to action ME */
+.mensaje-me-LandingPage{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.mensaje-me-LandingPage > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.mensaje-me-LandingPage > div > h1{
+  color: var(--text-color2);
+  font-size: var(--font-size1);
+  margin: 0;
+}
+.mensaje-me-LandingPage > div > h3{
+  color: var(--text-color2);
+  font-size: var(--font-size6);
+  margin: 0px;
+}
+.mensaje-me-LandingPage > h2{
+  color: var(--text-color2);
+  font-size: var(--font-size3);
+  margin: 0;
+}
+
+/* Para las redes sociales */
+.redes-me-LandingPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redes-me-LandingPage > a > img{
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+.redes-me-LandingPage > a > img:active{
+  transform: scale(0.92);
+  transition-duration: 50ms;
+}
 
 /*---- Respinsive   */
 
 
 /* Escritorio grande */
 @media only screen and (min-width: 992px){
+  .LandingPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+  }
 
 }
 
