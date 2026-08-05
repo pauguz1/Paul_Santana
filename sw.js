@@ -1,7 +1,7 @@
 
 
 
-const CACHE_STATIC_PAGE = 'static-pages-v1.024';
+const CACHE_STATIC_PAGE = 'static-pages-v1.025';
 
 
 
