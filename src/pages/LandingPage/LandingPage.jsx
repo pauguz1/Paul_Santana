@@ -31,17 +31,6 @@ const LandingPageComponent = ()=>{
     // para la lista de proyectos dev
     const [listaProyectosDev, setListaProyectosDev] = useState([
       {
-        titulo:'Polserial',
-        icono_titulo:'./imagenes_proyectos_dev/iconPolSerial.ico',
-        descripcion:'app para comunicacion serial',
-        imagen:'./imagenes_proyectos_dev/PolSerial.png',
-        tecnologias:[
-          './icons/arduino.png',
-          './icons/iconCSharp.svg',
-          './icons/iconCPlusPlus.svg',
-        ]
-      },
-      {
         titulo:'FishGroup',
         icono_titulo:'./imagenes_proyectos_dev/iconFishGroup.png',
         descripcion:'Sistema de control y monitoreo de invernadero',
@@ -56,6 +45,17 @@ const LandingPageComponent = ()=>{
           './icons/iconPython.svg',
           './icons/iconGIT.svg',
           './icons/iconFigma.svg',
+        ]
+      },
+      {
+        titulo:'Polserial',
+        icono_titulo:'./imagenes_proyectos_dev/iconPolSerial.ico',
+        descripcion:'app para comunicacion serial',
+        imagen:'./imagenes_proyectos_dev/PolSerial.png',
+        tecnologias:[
+          './icons/arduino.png',
+          './icons/iconCSharp.svg',
+          './icons/iconCPlusPlus.svg',
         ]
       },{
         titulo:'Control peliculas',
