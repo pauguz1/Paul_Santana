@@ -26,7 +26,8 @@
   right: 0;
   margin: auto;
   z-index: 1;
-  background: var(--fondo2);
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.6);
   box-sizing: border-box;
   /* animation: simple-shadow-LandingPage 7s infinite alternate; */
 }
@@ -101,10 +102,9 @@
   left: 0;
   right: 0;
   margin: auto;
-  height: 43px;
   width: 100%;
-  backdrop-filter: blur(1px);
-  background: var(--fondo2);
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.6);
   padding: var(--relleno3);
   box-sizing: border-box;
 }
@@ -751,7 +751,7 @@
   backdrop-filter: blur(5px);
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 70px;
   border-radius: var(--redondo2-5);
   padding: var(--relleno1);
   margin: auto;
