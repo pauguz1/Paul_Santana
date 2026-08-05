@@ -103,6 +103,7 @@
   margin: auto;
   height: 43px;
   width: 100%;
+  backdrop-filter: blur(1px);
   background: var(--fondo2);
   padding: var(--relleno3);
   box-sizing: border-box;
@@ -136,7 +137,7 @@
 /* para el contenedor de cada seccion */
 .seccion{
   width: 100%;
-  height: 100%;
+  height: auto;
   background: var(--fondo-landing);
   box-sizing: border-box;
   padding-top: 50px;
@@ -490,14 +491,37 @@
 }
 
 
+/* para el contenedor de proyectos */
+.contenedor-primario-proyecto-dev-LandingPage{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+/* ocultar scrollbar */
+.contenedor-primario-proyecto-dev-LandingPage::-webkit-scrollbar{
+  display: none;
+}
+
 /* Para el contenedor del item proyecto DEV */
 .contenedor-proyecto-dev-LandingPage{
+  flex: 0 0 90%;
+  height: fit-content;
+  scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   background: var(--fondo2);
   border-radius: var(--redondo2);
+  box-shadow: var(--box-shadow-black);
   padding: var(--relleno2);
-  margin: 10px;
+  margin: 5px;
   box-sizing: border-box;
 }
 .cabecera-proyecto-dev-LandingPage{
@@ -529,6 +553,7 @@
   text-align: left;
 }
 .contenedor-proyecto-dev-LandingPage > img{
+  max-width: 100%;
   height: 200px;
 }
 
@@ -536,13 +561,38 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .contenedor-tecnologias-proyecto-dev-LandingPage > img{
   width: 30px;
   height: 30px;
-  margin: 10px;
+  margin: 5px;
   user-select: none;
 }
+
+/* Para los indicadores */
+.indicadores-LandingPage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.indicadores-LandingPage span{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #777;
+}
+.indicadores-LandingPage span.proyecto-activo-LandingPage{
+
+  transform:scale(1.3);
+
+  background:white;
+
+}
+
 
 /* Efecto de pulso */
 @keyframes pulse-LandingPage {
@@ -778,6 +828,11 @@
   font-size: var(--font-size3);
   margin: 0;
 }
+.mensaje-me-LandingPage > h4{
+  color: var(--text-color2);
+  font-size: var(--font-size4);
+  margin: 0;
+}
 
 /* Para las redes sociales */
 .redes-me-LandingPage{
@@ -795,6 +850,11 @@
   transition-duration: 50ms;
 }
 
+
+/* para poner bordes redondos a una imagen */
+.redondo-LandingPage{
+  border-radius: var(--redondo2-5);
+}
 /*---- Respinsive   */
 
 
