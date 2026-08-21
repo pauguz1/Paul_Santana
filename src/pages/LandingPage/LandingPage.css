@@ -538,6 +538,7 @@
   height: 30px;
   margin: 10px;
   user-select: none;
+  border-radius: var(--redondo1);
 }
 .contenedor-proyecto-dev-LandingPage > p{
   font-size: var(--font-size3);

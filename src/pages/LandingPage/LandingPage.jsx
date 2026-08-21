@@ -324,15 +324,198 @@ const LandingPageComponent = ()=>{
     // para la lista de libros
     const [listaBooks, setListaBooks] = useState([
       {
-        titulo:'Republica de platon',
-        icono_titulo:'./imagenes_books/iconRepublicaPlaton.svg',
-        descripcion:'Nos habla de de como deberia ser una republica y sus consecuencias de ser, ademas de las cosas por las cuales es ideal para cada individuo.',
-      },
-      {
-        titulo:'Etica de Spinoza',
-        icono_titulo:'./imagenes_books/iconEticaSpinoza.svg',
-        descripcion:'Etica segun spinoza',
-      },
+        titulo:'En busca de la politica',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Gran obra que nos habla de distintos comportamientos humanos que impactan la política pública y con ello nuestro modus vivendi, además de bastantes temas algo impactantes que a priori no parece que impacten directamente nuestro comportamiento.',
+      },{
+        titulo:'Metamorfosis',
+        icono_titulo:'./autores_libros/kafka.png',
+        descripcion:'Una historia bastante sombría de las cual podemos comprender al autor y su vida que es reflejada en la obra, dejando de lado los recelos del autor hacia alguien en la cual proyectó su obra, nos da a entender que cuando cambiamos demasiado debemos emprender un vuelo hacia nuevos horizontes.',
+      },{
+        titulo:'El principe maquiavelo',
+        icono_titulo:'./autores_libros/maquiavelo.png',
+        descripcion:'corto pero profundo.',
+      },{
+        titulo:'Etica nicomaquea',
+        icono_titulo:'./autores_libros/aristoteles.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El anticristo',
+        icono_titulo:'./autores_libros/nietzsche.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Los retos de la educación en la modernidad liquida',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Asi hablo zaratrusta',
+        icono_titulo:'./autores_libros/nietzsche.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'La etica protestante y el espiritu del capitalismo',
+        icono_titulo:'./autores_libros/max_weber.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Amor liquido',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Critica del juicio',
+        icono_titulo:'./autores_libros/kant.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'La nausea',
+        icono_titulo:'./autores_libros/sartre.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Psicopolitica',
+        icono_titulo:'./autores_libros/han.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El amor las mujeres y la muerte',
+        icono_titulo:'./autores_libros/schopenhauer.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Mundo consumo',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Capsulas del saber',
+        icono_titulo:'./autores_libros/jung.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Ecce homo',
+        icono_titulo:'./autores_libros/nietzsche.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Etica según el orden geometrico',
+        icono_titulo:'./autores_libros/spinoza.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Globalización',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'La república',
+        icono_titulo:'./autores_libros/platon.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Te amo pero soy feliz sin ti',
+        icono_titulo:'./autores_libros/jaime_jaramillo.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'La inteligencia emocional',
+        icono_titulo:'./autores_libros/daniel_goleman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Humano demasiado humano',
+        icono_titulo:'./autores_libros/nietzsche.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El espíritu creativo',
+        icono_titulo:'./autores_libros/daniel_goleman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Enfócate',
+        icono_titulo:'./autores_libros/cal_newport.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Vendele a la mente no a la gente',
+        icono_titulo:'./autores_libros/jurgen.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Habitos atomicos',
+        icono_titulo:'./autores_libros/james_clear.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El hombre más rico de babilonia',
+        icono_titulo:'./autores_libros/george_samuel.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'La actitud creativa',
+        icono_titulo:'./autores_libros/rafael_lamata.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El poder del ahora',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Deja de set tú',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El club de las 5 am',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El arte de pensar',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Psicología de masas y analisis del yo',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El arte de la guerra',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'El mito de Sísifo',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Las trampas de la investigación: Cómo detectar los limites, prejuicios y puntos ciegos en las ciencias sociales',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'La interpretación de los sueños tomo 1',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'La interpretación de los sueños tomo 2',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Antropología económica',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Los límites del conocimiento',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Meditaciones de Marco Aurelio',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Capital',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Propaganda',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Psicologia oscura',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Corto pero profundo.',
+      },{
+        titulo:'Manifiesto del partido comunista',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Muy buena herramienta para comprender las implicaciones del capitalismo, aunque carece de fundamentos lógicos para plantear una nueva forma de orden, ya que siempre habla de la enfermedad pero nunca de una cura.',
+      },{
+        titulo:'Epicuro Los caminos hacia la felicidad',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Algo contradictorio ya que el autor habla que para ser feliz se deben satisfacer los placeres, aunque nunca habla de las carencias internas que el mismo posee como la necesidad de tener poder sobre otro, ya que cuenta que tiene esclavos y con ello revela la falta que posee.',
+      },{
+        titulo:'Código del dinero',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Es una buena opción para principiantes que no están tan familiarizados con su relación con el dinero o siquiera se hayan percatado de dicha relación y sus implicaciones.',
+      },{
+        titulo:'Invicto',
+        icono_titulo:'./autores_libros/bauman.png',
+        descripcion:'Básicamente es un cúmulo de reflexiones básicas del estoicismo para principiantes que apenas comienzan a leer, ayuda un poco pero nada supera a leer a los autores importantes, ya que esto es leer el resumen del resumen.',
+      }
     ]);
     // para la lista de cursos
     const [listaCursos, setListaCursos] = useState([
@@ -835,9 +1018,10 @@ const asesor = `
                 </div>
                 <h1 className="titulo-interno-seccion-LandingPage">PICS</h1>
                 <div className="contenedor-galeria-imagenes-LandingPage">
-                  <img src='./Paul-Dani-Final-2024-17.jpg' alt="imagen pics" />
-                  <img src='./Paul-Dani-Final-2024-17.jpg' alt="imagen pics" />
-                  <img src='./Paul-Dani-Final-2024-17.jpg' alt="imagen pics" />
+                  <img src='./fotos_pro/DSC_0562.jpg' alt="imagen pics" />
+                  <img src='./fotos_pro/DSC_0904-2.jpg' alt="imagen pics" />
+                  <img src='./fotos_pro/DSC_0495.jpg' alt="imagen pics" />
+                  <img src='./fotos_pro/DSC_0965-2.jpg' alt="imagen pics" />
                 </div>
             </section>
 
@@ -911,9 +1095,10 @@ const asesor = `
 
                 <h1 className="titulo-interno-seccion-LandingPage">PICS</h1>
                 <div className="contenedor-galeria-imagenes-LandingPage">
-                  <img src='./Paul-Dani-Final-2024-17.jpg' alt="imagen pics" />
-                  <img src='./Paul-Dani-Final-2024-17.jpg' alt="imagen pics" />
-                  <img src='./Paul-Dani-Final-2024-17.jpg' alt="imagen pics" />
+                  <img src='./fotos_gym/2026-08-20 20.59.34.jpg' alt="imagen pics" />
+                  <img src='./fotos_gym/2026-08-20 20.19.54.jpg' alt="imagen pics" />
+                  <img src='./fotos_gym/DSC_0035-3.jpg' alt="imagen pics" />
+                  <img src='./fotos_gym/DSC_1077-2.jpg' alt="imagen pics" />
                 </div>
 
             </section>
